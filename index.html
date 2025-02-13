@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
+  <body>
+    <h1>💖 Hello World!</h1>
+    <p>Welcome to your Electron application.</p>
+
+    <div class="container">
+      <div id="mode-selector" class="mode-selector" role="radiogroup">
+        <input type="radio" id="dark" name="mode" value="dark" />
+        <input type="radio" id="system" name="mode" value="system" checked />
+        <input type="radio" id="light" name="mode" value="light" />
+
+        <div class="slider"></div>
+
+        <label for="dark" tabindex="0" role="radio" aria-checked="false"
+          >Dark</label
+        >
+        <label for="system" tabindex="0" role="radio" aria-checked="true"
+          >System</label
+        >
+        <label for="light" tabindex="0" role="radio" aria-checked="false"
+          >Light</label
+        >
+      </div>
+    </div>
+    <script type="module" src="/src/renderer.js"></script>
+  </body>
+</html>
